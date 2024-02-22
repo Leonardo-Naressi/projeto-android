@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url(android-site.otf);
+}
+
+@font-face {
+    font-family: 'Bebasneue';
+    src: url(BebasNeue-Regular.ttf);
+}
+
+* {
+    max-width: 1000px;
+    min-width: 280px;
+    margin: auto;
+}
+:root {
+    /* cores do site */
+    --cor-1: #7ddeac6c;
+    --cor0: #7DDEAC;
+    --cor1: #32DE84;
+    --cor2: #47B37B;
+    --cor3: #455E51;
+    --cor4: #26332C;
+
+    /* fontes do site */
+    --fonte-padrao: Verdana, Arial, sans-serif;
+    --fonte-destaque: 'Bebasneue', serif;
+    --fonte-Android: 'Android', sans-serif;
+}
+
+body {
+    background-color: var(--cor-1);
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+img.pequena {
+    max-width: 350px;
+}
+
+div.video {
+    position: relative;
+    background-color: var(--cor4);
+    padding-bottom: 57%;
+    margin-bottom: 30px;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+header {
+    padding: 30px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.288);
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.288);;
+}
+
+header p {
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    transition-duration: 0.5s;
+}
+
+main {
+    padding: 10px;
+    background-color: white; 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.288);   
+}
+
+h1{
+    padding-top: 10px;
+    font-family: var(--fonte-Android);
+}
+
+h2{
+    padding-top: 40px;
+    font-family: var(--fonte-Android);
+}
+
+h3 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.4em;
+    font-weight: normal;
+}
+main a {
+    text-decoration: none;
+    color: var(--cor4);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+main a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+p {
+    font-family: var(--fonte-padrao);
+    line-height: 30px;
+    text-align: justify;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.288);
+}
+
+ul {
+    list-style-type: '\1F5F8\00A0\00A0';
+    columns: 2;
+}
+ /* testando commit */
+footer {
+    text-align: center;
+    background-color: var(--cor4);
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--cor4);
+    padding: 0px;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    color: var(--cor0);
+    text-decoration: underline;
+
+}
